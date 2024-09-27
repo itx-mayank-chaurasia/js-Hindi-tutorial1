@@ -27,3 +27,26 @@
 // const myfunction = function(){
 //     console.log("hello world"); function => datatype is object
 // }
+// ++++++++++++++++++++++    stack__and__heap       +++++++++++++++++++++++++++++
+// stack(primitive) and heap (non-primitive)
+
+// let myyoutubechannel_1 = "mayank chaurasia"
+// let myyoutubechannel_2 = myyoutubechannel_1
+// myyoutubechannel_2 = "speackcodecrunch"            ***stack me value ki copy assign ki jati hai***
+// console.log(myyoutubechannel_1);
+// console.log(myyoutubechannel_2);
+
+// let user1 = {
+//     email: "abc1@gmail.com",
+//     upi: "2154@ybl"
+// }
+// let user2 = user1
+// user2.email = "mayank@google.com"          *** heap me orignal value reffrence ki jati hai isliye kisi doosre nonprimitve me change krne par phle wale me change ho jata hai jabki stack me kewal uski copy change hoti hai ***
+// user2.upi = "5412@ibl"
+// console.log(user1.email);
+// console.log(user1.upi);
+
+
+// console.log(user2.email);
+// console.log(user2.upi);
+
