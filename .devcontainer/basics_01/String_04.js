@@ -21,4 +21,14 @@ console.log(url1.replace('%20', '-')); // for replace keywords in string
 console.log(url1.includes('mayankk')); // for check some keyword is there or not
 console.log(gameName.split('-')); // for make any string to array in which add any spacial keyword like as: (-,_,/,\,\, etc)
 
+const gameNAme = ('racing car is running now')
+//string method
+// console.log(gameNAme.anchor());
+let index = 5
+console.log(`indesx ${index} par ${gameNAme.at(index)} hai`) // kisi sentance me koi caractor kis index par hai chack krne liye
+let word= "carr"
+console.log(`the word "${word}" ${gameNAme.includes(word) ? 'is' :' is not'  // check for something word is include or not any string
+
+} in the sentance`,
+);
 
