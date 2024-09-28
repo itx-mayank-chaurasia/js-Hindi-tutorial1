@@ -1,1 +1,1 @@
-console.log((Math.random() * max-min) + min);
+console.log(MycreatedDate.toString());
