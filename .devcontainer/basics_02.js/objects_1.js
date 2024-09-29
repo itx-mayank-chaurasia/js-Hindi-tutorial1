@@ -15,21 +15,38 @@ const JsUser = {     // literals ke through objects declare krna
     lastLoginDay: ["Monday", "tuestday","friday"],
 
 }   
-console.log(JsUser["full name"]);
-console.log(JsUser.age);
-console.log(JsUser.Email);
-console.log(JsUser.lastLoginDay[1]);
-console.log(typeof JsUser[mySym]);
-console.log(JsUser);
-JsUser.age = 20;
-console.log(JsUser.age);
-Object.freeze(JsUser); // obj freeze hone ke bad uske key ko change nhi kr skte 
+// console.log(JsUser["full name"]);
+// console.log(JsUser.age);
+// console.log(JsUser.Email);
+// console.log(JsUser.lastLoginDay[1]);
+// console.log(typeof JsUser[mySym]);
+// console.log(JsUser);
+// JsUser.age = 20;
+// console.log(JsUser.age);
+// Object.freeze(JsUser); // obj freeze hone ke bad uske key ko change nhi kr skte 
 JsUser.age = 25;
-console.log(JsUser.age);
+// console.log(JsUser.age);
 
 
 JsUser.greeting = function(){
     console.log(`hello js coder! iam ${this["full name"]} `);
+}
+// console.log(JsUser.greeting());
+
+JsUser.mayank = function(){
+    // console.log(this.Email);
+    // console.log(`${[this.Email]}`);
     
 }
-console.log(JsUser.greeting());
+// console.log(JsUser.mayank());
+
+// +++++++++++++***objects de-structure***++++++++++++++++
+
+const obj = {
+    username: "itx.mayank",
+    userage: "18",
+    userEmail: "itxmayank@gmail"
+}
+// obj.username it is okey but 
+const {username: name} = obj // for de-structure of object const {username: name} = obj [we can change name of key(variable)]
+console.log(name);
