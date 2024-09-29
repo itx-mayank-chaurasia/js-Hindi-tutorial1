@@ -15,30 +15,30 @@ const JsUser = {     // literals ke through objects declare krna
     lastLoginDay: ["Monday", "tuestday","friday"],
 
 }   
-// console.log(JsUser["full name"]);
-// console.log(JsUser.age);
-// console.log(JsUser.Email);
-// console.log(JsUser.lastLoginDay[1]);
-// console.log(typeof JsUser[mySym]);
-// console.log(JsUser);
-// JsUser.age = 20;
-// console.log(JsUser.age);
+console.log(JsUser["full name"]);
+console.log(JsUser.age);
+console.log(JsUser.Email);
+console.log(JsUser.lastLoginDay[1]);
+console.log(typeof JsUser[mySym]);
+console.log(JsUser);
+JsUser.age = 20;
+console.log(JsUser.age);
 // Object.freeze(JsUser); // obj freeze hone ke bad uske key ko change nhi kr skte 
 JsUser.age = 25;
-// console.log(JsUser.age);
+console.log(JsUser.age);
 
 
 JsUser.greeting = function(){
     console.log(`hello js coder! iam ${this["full name"]} `);
 }
-// console.log(JsUser.greeting());
+ console.log(JsUser.greeting());
 
 JsUser.mayank = function(){
-    // console.log(this.Email);
-    // console.log(`${[this.Email]}`);
+    console.log(this.Email);
+    console.log(`${[this.Email]}`);
     
 }
-// console.log(JsUser.mayank());
+console.log(JsUser.mayank());
 
 // +++++++++++++***objects de-structure***++++++++++++++++
 
