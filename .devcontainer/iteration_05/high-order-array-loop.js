@@ -52,6 +52,7 @@ const myObject = {
 };
 for (const key in myObject) {
     // console.log(key);
+    // console.log(myObject[key]);  // for access object keys
     
 }
 // ? kya array ko for in loop se print krw skte sai chaliye dekhte hai
