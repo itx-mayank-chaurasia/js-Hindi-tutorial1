@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creat and delete element in DOM</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <ul class="languages">
+        <li>javascript</li>
+    </ul>
+    <div class="hclass">
+        <h1>this is a h1</h1>
+    </div>
+</body>
+<script>
+    // const newdiv = document.createElement("div");    // creat new element
+    // console.log(newdiv);                             // printing
+    // newdiv.className = "div1"                        // change class Name
+    // newdiv.id = Math.round(Math.random() * 10000 + 1)// every time unique id dena
+    // newdiv.setAttribute("title", "CREAT-ELEMENT");   // set attribute
+    // newdiv.style.backgroundColor = "#000";
+    // newdiv.style.color = "#fff";
+    // // newdiv.ineerText = "Document Object Model"    // change inner text
+    // const addtextinnewdiv = document.createTextNode("Document Object Model");
+    // newdiv.appendChild(addtextinnewdiv);
+    // document.body.appendChild(newdiv)                // add element in document ya fir keh sakte hai ki apne element ko display par show krne ke lie atach (append) krna
+
+    function language(langName) {
+        const li = document.createElement("li");
+        li.innerHTML = `${langName}`
+        document.querySelector('.languages').append(li);
+
+    }
+language("java");
+language("python");
+language("Go");
+language("HTML");
+
+function addhtag (tagName) {
+    const htag = document.createElement("h1");
+    htag.innerHTML = `${tagName}`;
+    document.querySelector('.hclass').appendChild(htag);   //function for add element esealy without optimization (poore document par traverse karna padega)
+}
+addhtag("this is a h1");
+function addptag(tagName) {
+    const ptag = document.createElement('p');
+    ptag.appendChild(document.createTextNode(`${tagName}`));  // function for add element esealy with optimization (poore document par traverse nhi karna padega)
+    document.querySelector('.hclass').appendChild(ptag)
+}
+addptag("this is a p");
+
+// +++++++++++++***edit element in DOM***+++++++++++++
+
+const secondlang = document.querySelector("li:nth-Child(4)");
+// secondlang.innerHTML = "CSS" // this is not good for edit element
+// for edit element we can use replace method
+
+const newli = document.createElement('li');
+newli.innerText = "swift";
+secondlang.replaceWith(newli)   // this is a replac method
+
+language("Go");
+
+const removenthchild = document.querySelector('li:last-Child');
+removenthchild.remove()                             // remove element using by variable
+// document.querySelector('li:last-Child').remove() // short way to remove element
+</script>
+</html>
