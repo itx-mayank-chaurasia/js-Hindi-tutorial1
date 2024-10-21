@@ -4,24 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM | Chai Aur Code</title>
-    <style>
-        body{
-            background-color: #212121;
-        }
-        .day{
-            color: #fff;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <div class="parent">
-        <div class="day">monday</div>
-        <div class="day">tuesday</div>
-        <div class="day">wednusday</div>
-        <div class="day">thusrday</div>
+    <div class="parent" id="parent">
+        <div id="week-day1" class="day">monday</div>
+        <div id="week-day2"class="day">tuesday</div>
+        <div id="week-day3"class="day">wednusday</div>
+        <div id="week-day4"class="day">thusrday</div>
+        <div id="week-day5"class="day">friday</div>
+        <div id="week-day6"class="day">saturday</div>
+        <div id="week-day7"class="day">sunday</div>
+        <!-- <input id="input-pass" type="password" placeholder="enter the password"> -->
+        <!-- <ul>
+            <li class="list-item">One</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul> -->
     </div>
 </body>
 <script>
+    const parent = document.querySelector(".parent");
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[0].innerHTML);
+    // for(let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);
+    // }
+    //    parent.children[0].style.color = "yellow"
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+    //    const dayone = document.querySelector(".day");
+    //    console.log(dayone);
+    //    console.log(dayone.parentElement);
+    //    console.log(dayone.nextElementSibling.innerHTML);
+    //    console.log(dayone.textContent);
+    //    console.log("NODES:--> ", parent.childNodes);
+       
+       
+</script>
+<!-- <script>
     const parent = document.querySelector('.parent');
     // console.log(parent.children[1].innerHTML);
 
@@ -38,5 +63,5 @@
     // console.log("parent-nodes: ", parent.childNodes);
     
     
-</script>
+</script> -->
 </html>
